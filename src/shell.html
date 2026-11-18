@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-NG" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="@@CSP@@">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0c0c16" id="theme-color">
+  <meta name="description" content="HikmahPrep: a private, local study workspace for Al-Hikmah University 200-level students. Arabic, Entrepreneurship and Islam revision, timed mocks, and private study notes.">
+  <title>HikmahPrep — Student workspace</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23d6c9ff'/%3E%3Cpath d='M20 16c-4-3-7-3-12-2v14c5-1 9 0 12 3 3-3 7-4 12-3V14c-5-1-8-1-12 2zm0 0v15m0-24v6m-3-3h6' stroke='%23201a42' fill='none' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>@@STYLE@@</style>
+</head>
+<body>
+  @@SPRITE@@
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="rail" id="rail" aria-label="Student workspace">
+    <a class="brand" href="#dashboard" aria-label="HikmahPrep dashboard"><span class="brand-mark"><svg aria-hidden="true"><use href="#i-brand"/></svg></span><span class="brand-label">HikmahPrep<span>.</span><small>STUDENT WORKSPACE</small></span></a>
+    <div class="cohort"><span class="cohort-icon"><svg aria-hidden="true"><use href="#i-cap"/></svg></span><span><strong>Al-Hikmah University</strong><small>200 Level · GNS 203</small></span></div>
+    <nav class="rail-nav" id="rail-nav" aria-label="Main navigation"></nav>
+    <div class="rail-bottom"><button class="rail-account" data-action="profile" type="button" aria-label="Student profile"><span class="avatar" data-initials>S</span><span class="account-copy"><strong data-profile-name>Student</strong><small>Local profile</small></span><svg class="account-more" aria-hidden="true"><use href="#i-more"/></svg></button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button type="button" class="icon-btn rail-toggle" data-action="rail" aria-label="Collapse sidebar" aria-controls="rail" aria-expanded="true"><svg aria-hidden="true"><use href="#i-panel"/></svg></button>
+        <nav class="breadcrumbs" aria-label="Breadcrumb" id="breadcrumbs"><a href="#dashboard">Workspace</a><svg aria-hidden="true"><use href="#i-chevron-right"/></svg><strong aria-current="page">Dashboard</strong></nav>
+        <a class="brand mobile-brand" href="#dashboard" aria-label="HikmahPrep dashboard"><span class="brand-mark"><svg aria-hidden="true"><use href="#i-brand"/></svg></span><span class="brand-label">HikmahPrep<span>.</span></span></a>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" class="search-trigger" data-action="search" aria-label="Open global search" aria-keyshortcuts="Control+k Meta+k"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Search anything</span><kbd id="key-hint">Ctrl K</kbd></button>
+        <button type="button" class="icon-btn quick-top" data-action="quick" title="Quick actions" aria-label="Quick actions"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+        <button type="button" class="icon-btn notifications-top" data-action="notifications" title="Notifications" aria-label="Notifications"><svg aria-hidden="true"><use href="#i-bell"/></svg><i id="notice-dot" hidden></i></button>
+        <button type="button" class="icon-btn theme-top" data-action="theme" title="Switch theme" aria-label="Switch theme"><svg aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="avatar profile-top" data-initials data-action="profile" aria-label="Student profile">S</button>
+      </div>
+      <span class="scroll-progress" aria-hidden="true"></span>
+    </header>
+    <div class="page-wrap">
+      <main id="main" tabindex="-1"><div id="view"><div class="boot" aria-hidden="true"><div></div><div></div><div></div></div></div></main>
+      <footer class="foot"><div><strong>HikmahPrep</strong> <span>· Independent student workspace</span><small id="local-status"><svg aria-hidden="true"><use href="#i-device"/></svg> Progress stays in this browser</small></div><div class="credit"><span>Created by <strong>Meendev</strong></span><a href="https://wa.me/2349132798151" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp 09132798151 <svg aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a></div></footer>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"></nav>
+  <dialog id="overlay" aria-labelledby="overlay-title"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">Enable JavaScript to run this offline study workspace.</p></noscript>
+  <script>@@SCRIPT@@</script>
+</body>
+</html>
