@@ -29,10 +29,19 @@ node serve.mjs
 
 `build.py` uses only Python's standard library. `serve.mjs` is an optional static preview and local test server, not a required application service. Deploy **only** `site/` on HTTPS; apply the supplied `_headers` if the host supports it, or configure equivalent headers. The single file also works offline without Node. Persistence in a file viewer, in private mode, or on `file://` depends on its storage policy. If storage is blocked the app identifies this and uses temporary in-memory state.
 
+### Deploy to Vercel
+
+Leave **Root Directory** unset (the repository root) so Vercel can read `vercel.json`. It selects the **Other** framework preset, skips install and build, and publishes the checked-in `site/` directory. Open your deployment at `/`, not `/site/`. The page keeps its generated script policy in the HTML; `vercel.json` sets the response headers because Vercel does not read `site/_headers`.
+
+If an existing deployment returns `404: NOT_FOUND`, redeploy from a commit containing `vercel.json`. To fix a deployment from an older commit, set the **Output Directory** override to `site`, choose **Other**, and leave the build and install commands blank. Keep **Root Directory** at the repository root. For production, deploy from your project's configured production branch (usually `main`).
+
+After changing `src/`, run `python3 build.py` and commit the regenerated `site/index.html` and `site/_headers` before deploying. Vercel serves those checked-in files as-is.
+
 ### Folder structure
 
 ```text
 HikmahPrep/
+├── vercel.json                 # Vercel static deployment settings
 ├── site/                       # publishable index.html and optional _headers
 ├── src/
 │   ├── shell.html, sprite.svg  # document and inlined icon set
